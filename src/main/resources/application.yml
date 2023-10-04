@@ -1,0 +1,23 @@
+server:
+  port: 8081
+  servlet:
+    context-path: /test-carvajal/api/v1
+
+project:
+  data:
+    security:
+      secret-key: "ARANDA"
+      jwt:
+        expiration-token: 24000
+spring:
+  security:
+    basic:
+      enabled: false
+  datasource:
+    url: jdbc:h2:file:C:\Users\Juan Aranda\Desktop\Proyectos\base_prueba_carvajal\backend-java\prueba-carvajal\src\main\resources\db\test
+    username: sa
+    password:
+    driver-class-name: org.h2.Driver
+  jpa:
+    properties:
+      hibernateDialect: "org.hibernate.dialect.H2Dialect"
